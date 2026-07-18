@@ -1,12 +1,4 @@
-
----
-
-## 📄 `schema.sql` (для D1 базы данных)
-
-```sql
--- schema.sql - Создание таблиц для D1
-
--- Аккаунты
+-- schema.sql
 CREATE TABLE IF NOT EXISTS accounts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     phone TEXT UNIQUE NOT NULL,
@@ -22,7 +14,6 @@ CREATE TABLE IF NOT EXISTS accounts (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Сессии
 CREATE TABLE IF NOT EXISTS sessions (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     phone TEXT UNIQUE NOT NULL,
@@ -31,7 +22,6 @@ CREATE TABLE IF NOT EXISTS sessions (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Сообщения
 CREATE TABLE IF NOT EXISTS messages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     account_id INTEGER,
@@ -45,7 +35,6 @@ CREATE TABLE IF NOT EXISTS messages (
     read BOOLEAN DEFAULT 0
 );
 
--- Индексы
 CREATE INDEX IF NOT EXISTS idx_accounts_phone ON accounts(phone);
 CREATE INDEX IF NOT EXISTS idx_messages_account ON messages(account_id);
 CREATE INDEX IF NOT EXISTS idx_messages_sent ON messages(sent_at);
