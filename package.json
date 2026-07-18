@@ -1,0 +1,20 @@
+{
+  "name": "sudev-wa2",
+  "version": "1.0.0",
+  "description": "WhatsApp Auto-Progress на Cloudflare",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev src/index.js",
+    "deploy": "wrangler deploy src/index.js",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "@google/generative-ai": "^0.1.1",
+    "qrcode": "^1.5.3",
+    "pino": "^8.17.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
