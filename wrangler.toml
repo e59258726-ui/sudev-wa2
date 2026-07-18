@@ -5,10 +5,10 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "bot-database"
-database_id = "your-d1-database-id"
+database_id = "13cc6de3-e51f-4e3b-969b-fc040d555475"
 
 [vars]
-BOT_TOKEN = "ваш_токен_бота"
-GEMINI_API_KEY = "ваш_ключ_gemini"
+BOT_TOKEN = "8629767792:AAGC2gkoL_vrKxyxwvk8qX-4yLViyaHSRGA"
+GEMINI_API_KEY = "AQ.Ab8RN6KO-dCJVJHmpAWJZA2N-y0NeWUhSJoZXqTOioOMaMRj_A"
 GEMINI_DEFAULT_MODEL = "gemini-1.5-flash"
 API_URL = "https://sudev-wa2.pages.dev"
